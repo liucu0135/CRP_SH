@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398fea7d-9298-4b0b-ad55-0b155bd686a5" name="Default" comment="" />
+    <list default="true" id="398fea7d-9298-4b0b-ad55-0b155bd686a5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../CRP_SH_algorithm/VVR_Simulator_mo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRP_SH_algorithm/.idea/CRP_SH_algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CRP_SH_algorithm/.idea/CRP_SH_algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRP_SH_algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CRP_SH_algorithm/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,9 @@
       <replace>init_sim</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../CRP_SH_algorithm" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="-4" />
@@ -41,31 +48,32 @@
     <option name="height" value="1084" />
   </component>
   <component name="ProjectId" id="1hUPGz1AhqS9rPvTqlnRWDL4ch6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRP_SH_algorithm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dzp\Desktop\huiyu\VVR\tobeimp" />
-      <recent name="C:\Users\darkc\PycharmProjects\VVR" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\dzp\Desktop\huiyu\CRP_SH_algorithm" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\dzp\Desktop\huiyu\VVR" />
       <recent name="$PROJECT_DIR$/1111" />
       <recent name="C:\Users\darkc\Desktop\VVR" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dzp\Desktop\huiyu\VVR\tobeimp" />
       <recent name="C:\Users\darkc\PycharmProjects\VVR" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Run_0">
     <configuration name="Run_0" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -86,7 +94,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Run_100" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -107,7 +115,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Run_ccmat100" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -128,7 +136,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Run_ccmat_stoch0" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -149,7 +157,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Run_ccmat_stoch100" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -190,8 +198,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="CRP_SH_algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="CRP_SH_algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="VVR" />
+      <module name="CRP_SH_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -245,6 +282,24 @@
       <updated>1563123192099</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1531" y="461" key="FileChooserDialogImpl" timestamp="1600062917575">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="1531" y="461" key="FileChooserDialogImpl/3502.0.1018.1920/62.0.3378.1440@62.0.3378.1440" timestamp="1600062917575" />
+    <state x="1596" y="611" key="Github.ShareDialog" timestamp="1600062957444">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="1596" y="611" key="Github.ShareDialog/3502.0.1018.1920/62.0.3378.1440@62.0.3378.1440" timestamp="1600062957444" />
+    <state x="1531" y="418" key="Github.UntrackedFilesDialog" timestamp="1600062964696">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="1531" y="418" key="Github.UntrackedFilesDialog/3502.0.1018.1920/62.0.3378.1440@62.0.3378.1440" timestamp="1600062964696" />
+    <state x="1252" y="362" key="SettingsEditor" timestamp="1600064622024">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="1252" y="362" key="SettingsEditor/3502.0.1018.1920/62.0.3378.1440@62.0.3378.1440" timestamp="1600064622024" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

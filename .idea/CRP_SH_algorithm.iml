@@ -2,12 +2,9 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/../VVR/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (WGAN)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (DQN)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="TestRunnerService">
-    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
   </component>
 </module>
