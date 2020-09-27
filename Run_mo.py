@@ -28,6 +28,7 @@ data=[noc,nom,nol,ll,nof]
 sets=[]
 # data=[]
 ts=[]
+tds=[]
 times=[]
 columns=['colors','models','lanes','lane length', 'filling','color change','time']
 
@@ -40,7 +41,7 @@ for pref in pres:
     st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref)
     s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref)
 
-    repeat_epoches=1
+    repeat_epoches=20
     # print(s.mc_tab)
     # print(s.bank.get_view_state())
     # print(s.bank.front_hist())
@@ -56,22 +57,25 @@ for pref in pres:
             # if i%10==0:
             #     print(i, ' out of 1000 finihsed!     ', epoch, ' out of 10 epcoh', td_sum)
             s.BBA_rule_step_in()
-            if s.VVR_rule_out(i%10==110):
-                td_sum+=s.get_distortion(absolute=True, tollerance=0)/10
+            if s.VVR_rule_out(i%10==0):
+                td=s.get_distortion(absolute=True, tollerance=0)/10
+                td_sum+=td
             else:
                 print("release failed")
         times.append(time.time() - start_time)
         cc.append(s.cc)
+        tds.append(td)
         sets.append(set)
         cc_sum += s.cc
         t_sum += time.time() - start_time
     ccs.append(cc_sum/repeat_epoches)
     ts.append(t_sum/repeat_epoches)
+    tds.append(t_sum/repeat_epoches)
 
     print("color-modle:{}-{}, bank: {}X{}, cc:{}, td:{}".format(noc[set],nom[set],nol[set],ll[set],cc_sum/repeat_epoches,td_sum/repeat_epoches))
     data.append(ccs)
     data.append(ts)
-    data.append(sets)
+    data.append(pres)
     data.append(cc)
     data.append(times)
 result=pd.DataFrame.from_records(data)

@@ -93,23 +93,23 @@ class VVR_Simulator():
         else:
             return in_tensor.float(), mct
 
-    def VVR_rule_out(self):
-        if self.last_color==-1:
-            last=self.target_color
-        else:
-            last=self.last_color
-        self.job_list, last_color = self.find_job_list(last, alert=True) # select available models
-
-        # select a model
-        lane_dists=np.zeros(self.num_lanes)
-        for l in range(self.num_lanes):
-            model = self.bank.front_view()[l]
-            if (self.job_list[model]) and (model > -1):
-                lane_dists[l]=self.find_nearest_order(model, last_color)
-        l=np.argmax(lane_dists)
-        if np.max(lane_dists)==0:
-            print("empty")
-        return self.release(l, last)
+    # def VVR_rule_out(self):
+    #     if self.last_color==-1:
+    #         last=self.target_color
+    #     else:
+    #         last=self.last_color
+    #     self.job_list, last_color = self.find_job_list(last, alert=True) # select available models
+    #
+    #     # select a model
+    #     lane_dists=np.zeros(self.num_lanes)
+    #     for l in range(self.num_lanes):
+    #         model = self.bank.front_view()[l]
+    #         if (self.job_list[model]) and (model > -1):
+    #             lane_dists[l]=self.find_nearest_order(model, last_color)
+    #     l=np.argmax(lane_dists)
+    #     if np.max(lane_dists)==0:
+    #         print("empty")
+    #     return self.release(l, last)
 
     def step(self, action):
         last=self.last_color
