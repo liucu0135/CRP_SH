@@ -86,4 +86,4 @@ for pref in pres:
     data.append(cc)
     data.append(times)
 result=pd.DataFrame.from_records(data)
-result.to_csv('result_mo_100.csv')
+result.to_csv('result_mo_ccm_mod1.csv')
