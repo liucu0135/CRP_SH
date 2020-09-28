@@ -13,6 +13,12 @@ import time
 # color-modle:10-10, bank: 7X8, cc:153.0, td:103.70000000000003
 # color-modle:10-10, bank: 7X8, cc:174.0, td:95.69999999999999
 
+# color-modle:10-10, bank: 7X8, cc:94.8, td:184.49999999999972
+# color-modle:10-10, bank: 7X8, cc:131.45, td:131.47499999999974
+# color-modle:10-10, bank: 7X8, cc:149.25, td:108.91499999999955
+# color-modle:10-10, bank: 7X8, cc:167.6, td:93.55499999999945
+# color-modle:10-10, bank: 7X8, cc:192.95, td:70.25999999999979
+
 
 paras = []
 noc = [10, 20, 10, 10, 10, 20]
@@ -37,8 +43,8 @@ set=3
 pres=[0.2, 0.4, 0.5, 0.6, 0.8]
 for pref in pres:
     preFill = nol[set]*ll[set]*nof[set] // 10
-    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref)
-    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref)
+    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref,cc_file='./csv_files/cost.csv')
+    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref,cc_file='./csv_files/cost.csv')
 
     repeat_epoches=1
     # print(s.mc_tab)

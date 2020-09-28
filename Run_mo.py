@@ -6,12 +6,12 @@ import pickle
 import pandas as pd
 import time
 
-
-# color-modle:10-10, bank: 7X8, cc:96.0, td:197.5999999999999
-# color-modle:10-10, bank: 7X8, cc:141.0, td:138.59999999999994
-# color-modle:10-10, bank: 7X8, cc:139.0, td:138.2000000000001
-# color-modle:10-10, bank: 7X8, cc:153.0, td:103.70000000000003
-# color-modle:10-10, bank: 7X8, cc:174.0, td:95.69999999999999
+# vvr_rep10, vvr%10:
+# color-modle:10-10, bank: 7X8, cc:96.15, td:177.44999999999916
+# color-modle:10-10, bank: 7X8, cc:129.55, td:124.5549999999995
+# color-modle:10-10, bank: 7X8, cc:151.55, td:94.62999999999963
+# color-modle:10-10, bank: 7X8, cc:168.25, td:83.93499999999969
+# color-modle:10-10, bank: 7X8, cc:194.9, td:54.75500000000062
 
 
 paras = []
@@ -38,8 +38,8 @@ set=3
 pres=[0.2, 0.4, 0.5, 0.6, 0.8]
 for pref in pres:
     preFill = nol[set]*ll[set]*nof[set] // 10
-    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref)
-    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref)
+    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref,cc_file='./csv_files/cost1.csv')
+    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref,cc_file='./csv_files/cost1.csv')
 
     repeat_epoches=20
     # print(s.mc_tab)
