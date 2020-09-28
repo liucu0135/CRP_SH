@@ -6,7 +6,7 @@ import pandas as pd
 
 class VVR_Simulator():
     def __init__(self, num_color=8, num_model=3, capacity=35, num_lanes=5, lane_length=8, VVR_temp=None, cc_file=None, repeat=10, stoch=False, preference=0):
-        self.preference=preference
+        self.preference= preference
         self.num_color = num_color
         self.num_model = num_model
         self.num_lanes = num_lanes
