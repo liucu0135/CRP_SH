@@ -14,6 +14,13 @@ import time
 # color-modle:10-10, bank: 7X8, cc:194.9, td:54.75500000000062
 
 
+# vvr_rep100, vvr%10: ccm
+# color-modle:10-10, bank: 7X8, cc:152.73299999999995, td:182.69499999999948
+# color-modle:10-10, bank: 7X8, cc:202.20150000000004, td:138.4749999999995
+# color-modle:10-10, bank: 7X8, cc:229.28100000000003, td:115.04000000000003
+# color-modle:10-10, bank: 7X8, cc:254.74900000000002, td:96.66499999999982
+# color-modle:10-10, bank: 7X8, cc:288.29550000000006, td:75.40999999999976
+
 paras = []
 noc = [10, 20, 10, 10, 10, 20]
 nom = [5,  10, 5,  10,  5, 10]
@@ -57,7 +64,7 @@ for pref in pres:
             # if i%10==0:
             #     print(i, ' out of 1000 finihsed!     ', epoch, ' out of 10 epcoh', td_sum)
             s.BBA_rule_step_in()
-            if s.VVR_rule_out(i%10==0):
+            if s.VVR_rule_out(i%1==0):
                 td=s.get_distortion(absolute=True, tollerance=0)/10
                 td_sum+=td
             else:
