@@ -30,7 +30,7 @@ class Simulator():
 
     def read_cc_matrix(self,cc_file):
         ccm=pd.read_csv(cc_file)
-        ccm=ccm.to_numpy(dtype=np.float,copy=True)[:,1:]
+        ccm=ccm.to_numpy(dtype=np.float,copy=True)[:,1:]/7
         return ccm
 
     def read_color_dist(self, color_file):
@@ -225,7 +225,7 @@ class Simulator():
                 if self.ccm is None:
                     self.cc += 1
                 elif self.stoch:
-                    self.cc += int(np.random.uniform()<(self.ccm[color, self.last_color]/10))
+                    self.cc += int(np.random.uniform()<(self.ccm[color, self.last_color]))
                 else:
                     self.cc +=self.ccm[color, self.last_color]
                 self.last_color = color
