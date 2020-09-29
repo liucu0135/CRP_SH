@@ -49,11 +49,11 @@ columns=['colors','models','lanes','lane length', 'filling','color change','time
 
 # for set in range(6):
 set=3
-pres=[0.2, 0.4, 0.5, 0.6, 0.8]
+pres=[0, 0.4, 0.5, 0.6, 1]
 for pref in pres:
     preFill = nol[set]*ll[set]*nof[set] // 10
-    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref,cc_file='./csv_files/cost1.csv')
-    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref,cc_file='./csv_files/cost1.csv', color_dist_file='./csv_files/total_orders.csv')
+    st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref,cc_file='./csv_files/cost.csv')
+    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref,cc_file='./csv_files/cost.csv', color_dist_file='./csv_files/total_orders.csv')
 
     repeat_epoches=20
     # print(s.mc_tab)
