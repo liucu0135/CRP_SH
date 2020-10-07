@@ -74,7 +74,7 @@ for pref in pres:
             # if i%10==0:
             #     print(i, ' out of 1000 finihsed!     ', epoch, ' out of 10 epcoh', td_sum)
             s.BBA_rule_step_in()
-            if s.VVR_rule_out(i%1==1):
+            if s.VVR_rule_out(i%1==0):
                 td=s.get_distortion(absolute=True, tollerance=0)/10
                 td_epo+=td
             else:
