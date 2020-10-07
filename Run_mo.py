@@ -55,7 +55,7 @@ pres=np.arange(100)/100
 for pref in pres:
     preFill = nol[set]*ll[set]*nof[set] // 10
     st = VVR_Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, preference=pref,cc_file='./csv_files/cost.csv')
-    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=10, preference=pref,cc_file='./csv_files/cost.csv', color_dist_file='./csv_files/total_orders.csv')
+    s = Sim(num_color=noc[set], num_model=nom[set], num_lanes=nol[set], lane_length=ll[set], capacity=preFill, VVR_temp=st,repeat=100, preference=pref,cc_file='./csv_files/cost.csv', color_dist_file='./csv_files/total_orders.csv')
 
     repeat_epoches=1
     # print(s.mc_tab)
@@ -74,7 +74,7 @@ for pref in pres:
             # if i%10==0:
             #     print(i, ' out of 1000 finihsed!     ', epoch, ' out of 10 epcoh', td_sum)
             s.BBA_rule_step_in()
-            if s.VVR_rule_out(i%10==1):
+            if s.VVR_rule_out(i%1==1):
                 td=s.get_distortion(absolute=True, tollerance=0)/10
                 td_epo+=td
             else:
