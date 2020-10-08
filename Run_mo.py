@@ -92,4 +92,4 @@ for pref in pres:
     print("color-modle:{}-{}, bank: {}X{}, cc:{}, td:{}".format(noc[set],nom[set],nol[set],ll[set],cc_sum/repeat_epoches,td_sum/repeat_epoches))
 
 result=pd.DataFrame.from_records(data)
-result.to_csv('bench.csv')
+result.to_csv('bench_cc.csv')
