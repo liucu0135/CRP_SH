@@ -70,7 +70,7 @@ for pref in pres:
         s.reset()
         start_time = time.time()
         td_epo=0
-        for i in range(300-preFill-1):
+        for i in range(1000-preFill-1):
             # if i%10==0:
             #     print(i, ' out of 1000 finihsed!     ', epoch, ' out of 10 epcoh', td_sum)
             s.BBA_rule_step_in()

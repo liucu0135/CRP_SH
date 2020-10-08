@@ -9,7 +9,7 @@ import pandas as pd
 #   2. create self.terminal: count remaining orders inside sim object
 #   3. create self.reward:   calculate reward inside sim object
 class VVR_Simulator():
-    def __init__(self, num_color=10, num_model=5, capacity=21, num_lanes=5, on=300, lane_length=6):
+    def __init__(self, num_color=10, num_model=5, capacity=21, num_lanes=5, on=1000, lane_length=6):
         self.num_color = num_color
         self.num_model = num_model
         self.num_lanes = num_lanes

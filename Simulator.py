@@ -5,7 +5,7 @@ import numpy.random as random
 import pandas as pd
 
 class Simulator():
-    def __init__(self, num_color=8, num_model=3, capacity=30, num_lanes=5, lane_length=8, VVR_temp=None, cc_file=None, color_dist_file=None, repeat=100, stoch=False, preference=1):
+    def __init__(self, num_color=8, num_model=3, capacity=30, num_lanes=5, lane_length=8, VVR_temp=None, cc_file=None, color_dist_file=None, no=1000, repeat=100, stoch=False, preference=1):
         self.num_color = num_color
         self.num_model = num_model
         self.num_lanes = num_lanes
@@ -18,7 +18,7 @@ class Simulator():
         self.bug_count = 0
         self.VVR_sim = VVR_temp
         self.ccm=None
-        self.orders_num = 300
+        self.orders_num = no
         self.stoch=stoch
         self.color_dist_file=None
         if cc_file is not None:
